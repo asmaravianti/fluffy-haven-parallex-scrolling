@@ -4,7 +4,6 @@ const header = document.querySelector("header");
 const shadow = document.querySelector(".shadow");
 const content = document.querySelector(".content");
 const section = document.querySelector("section");
-const image_container = document.querySelector(".imgContainer");
 const opacity = document.querySelectorAll(".opacity");
 const border = document.querySelector(".border");
 
@@ -28,12 +27,10 @@ window.addEventListener('scroll', () => {
     shadow.style.height = `${scroll * 0.5 + 300}px`;
 
     content.style.transform = `translateY(${scroll / (section_height + sectionY.top) * 50 - 50}px)`;
-    image_container.style.transform = `translateY(${scroll / (section_height + sectionY.top) * -50 + 50}px)`;
 
     border.style.width = `${scroll / (sectionY.top + section_height) * 30}%`;
-})
+});
 
-// Custom Cursor
 const cursor = document.querySelector('.custom-cursor');
 
 window.addEventListener('mousemove', (e) => {

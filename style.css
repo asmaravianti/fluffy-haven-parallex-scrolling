@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
 
 * {
     padding: 0;
@@ -7,16 +7,16 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #ffdde1; /* Light pink pastel background */
-    cursor: none; /* Hide default cursor */
+    font-family: 'Quicksand', sans-serif;
+    background-color: #ffdde1;
+    cursor: none;
 }
 
 .custom-cursor {
     position: fixed;
     width: 20px;
     height: 20px;
-    background-color: #ff6b8b; /* Darker pastel pink */
+    background-color: #ff6b8b;
     border-radius: 50%;
     pointer-events: none;
     transform: translate(-50%, -50%);
@@ -35,7 +35,7 @@ header {
     height: 100vh;
     position: relative;
     overflow: hidden;
-    background-color: #8eaaad; /* Sky color */
+    background-color: #8eaaad;
 }
 
 header:after {
@@ -55,23 +55,23 @@ header:after {
     height: 100%;
     left: 0;
     top: 0;
-    object-fit: cover; /* Ensure the image covers the entire area */
-    filter: drop-shadow(0 0 10px rgba(255, 107, 139, 0.5)); /* Soft glow effect */
+    object-fit: cover;
+    filter: drop-shadow(0 0 10px rgba(255, 107, 139, 0.5));
 }
 
 .layer1 {
     z-index: 19;
-    top: 10%; /* Adjust the top position to prevent cut-off */
+    top: 10%;
 }
 
 .layer2 {
     z-index: 18;
-    top: 10%; /* Adjust the top position to prevent cut-off */
+    top: 10%;
 }
 
 .layer3 {
     z-index: 17;
-    top: 10%; /* Adjust the top position to prevent cut-off */
+    top: 10%;
 }
 
 .sky {
@@ -80,7 +80,7 @@ header:after {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the entire area */
+    object-fit: cover;
 }
 
 nav {
@@ -155,9 +155,9 @@ nav .container {
     text-align: center;
     font-size: 5rem;
     font-weight: 600;
-    color: #ff6b8b; /* Darker pastel pink */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Black shadow */
-    animation: float 3s ease-in-out infinite; /* Floating animation */
+    color: #ff6b8b;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: float 3s ease-in-out infinite;
 }
 
 @keyframes float {
@@ -171,34 +171,22 @@ nav .container {
 
 section {
     width: 100%;
-    background-color: #ffc0cb; /* Darker pink pastel background */
+    background-color: #ffc0cb;
     position: relative;
 }
 
 section .container {
     padding: 3rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+    display: flex;
     justify-content: center;
+    align-items: center;
     min-height: 100vh;
 }
 
-section img {
-    width: 100%;
-}
-
-section .container > * {
-    margin: 2rem;
-}
-
 .content {
-    color: #333; /* Dark text for contrast */
+    color: #333;
     transform: translateY(-50px);
-}
-
-.imgContainer {
-    transform: translateY(50px);
+    text-align: center;
 }
 
 .title {
@@ -213,7 +201,7 @@ section .container > * {
     position: absolute;
     width: 0%;
     height: 3px;
-    background-color: #ff6b8b; /* Darker pastel pink border */
+    background-color: #ff6b8b;
     bottom: 0;
     left: 0;
 }
@@ -225,7 +213,7 @@ section .container > * {
     width: 100%;
     left: 0;
     z-index: 20;
-    background: linear-gradient(to top, #ffc0cb, transparent); /* Darker pink pastel gradient */
+    background: linear-gradient(to top, #ffc0cb, transparent);
 }
 
 .opacity {
